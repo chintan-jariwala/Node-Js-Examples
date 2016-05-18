@@ -1,0 +1,40 @@
+html
+    head
+        title= title
+    body
+        h3 Coder Details
+        form(name="Final Coder" method="post" action="/adding_coder")
+            br
+            span First Name
+            span &nbsp;
+            input(type="text" value= first_name)
+            br
+            br
+            span Last name
+            span &nbsp;
+            input(type="text" value= last_name)
+            br
+            br
+            span Languages
+            span &nbsp;
+            input(type="text" value= languages)
+            br
+            br
+            span Days
+            span &nbsp;
+            input(type="text" value= coder_day)
+            br
+            br
+            span Favourite Programming Language
+            span &nbsp;
+            input(type="text" value= favourite)
+            br
+            br
+            br
+            button(type="submit") Add Coder
+
+        form(action="/add_coder_favLang",method="post")
+            button(type="submit") Back
+
+        form(action="/clearAll",method="post")
+            button(type="submit") Cancel

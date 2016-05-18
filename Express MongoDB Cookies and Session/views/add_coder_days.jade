@@ -1,0 +1,15 @@
+html
+    head
+        title= title
+    body
+        form#form_add_coder(name="add_coder_days",method="post",action="/add_coder_favLang")
+            span Days You can Meet
+            span &nbsp;
+            input#input_days_name(type="text",placeholder="Monday Tuesday etc",name="coder_days",value=val)
+            br
+            br
+            button#submit_coder(type="submit") Submit
+
+        form(action="/add_coder_langs",method="post")
+            button(type="submit") Back
+

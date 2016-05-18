@@ -1,0 +1,67 @@
+head
+	title Jade Form
+
+	h1 WebForm
+		br
+
+	p
+		h4= success
+	p
+		h4= total
+	form(action="/post_coder",method="post")
+		fieldset
+			legend Personal Details
+			p
+				label
+					| First Name		
+					input(type="text",name="coder_name",placeholder="eg. Chintan")
+			p
+				label
+					| Last Name
+					input(type="text",name="coder_last_name",placeholder="eg. Jariwala")
+			p
+				label
+					| Languages  
+					input(type="text",name="coder_langs" ,placeholder="eg. Java node angular")
+			p
+				label
+					| Days You Can meet
+			p
+				label
+					input(input type="checkbox" name="coder_days" value="Monday")
+					| Monday
+
+			p
+				label
+					input(input type="checkbox" name="coder_days" value="Tuesday")
+					| Tuesday
+			p
+				label
+					input(input type="checkbox" name="coder_days" value="Wednesday")
+					| Wednesday
+			p
+				label
+					input(input type="checkbox" name="coder_days" value="Thursday")
+					| Thursday
+			p
+				label
+					input(input type="checkbox" name="coder_days" value="Friday")
+					| Friday
+			p
+				label
+					input(input type="checkbox" name="coder_days" value="Saturday")
+					|Saturday
+			p
+				label
+					input(input type="checkbox" name="coder_days" value="Sunday")
+					|Sunday
+			p
+				label
+					| Favourite Language
+					input(type="text" name="coder_fav_lang" placeholder="eg. Java")
+			p
+				label
+					input(type="submit" value="Send")
+
+
+

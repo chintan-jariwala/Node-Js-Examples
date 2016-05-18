@@ -1,0 +1,13 @@
+html
+    head
+        title= title
+
+    body
+
+        h3.
+            Coders
+
+        ul
+            each coder, i in coderlist
+                li#coder_list_item
+                    Mr <strong>#{coder.first_name} #{coder.last_name}</strong> knows <strong>#{coder.languages}</strong> and is available on <strong>#{coder.days}</strong> and his favourite language is <strong>#{coder.favLang}</strong>

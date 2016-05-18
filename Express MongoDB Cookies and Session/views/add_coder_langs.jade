@@ -1,0 +1,15 @@
+html
+    head
+        title= title
+    body
+        form#form_add_coder(name="add_coder_langs",method="post",action="/add_coder_days")
+            span Languages
+            span &nbsp;
+            input#input_langs(type="text",placeholder="eg. Java Node Angular",name="coder_langs",value=val)
+            br
+            br
+            button#submit_coder(type="submit") Submit
+
+        form(action="/",method="get")
+            button(type="submit") Back
+

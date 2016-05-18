@@ -1,0 +1,18 @@
+html
+    head
+        title= title
+    body
+
+        form#form_add_coder(name="add_coder",method="post",action="/")
+            span First Name
+            span &nbsp;
+            input#input_fname(type="text",placeholder="eg. Chintan",name="coder_fname" value= val1)
+            br
+            br
+            span Last Name
+            span &nbsp;
+            input#input_lname(type="text",placeholder="eg. Jariwala",name="coder_lname" value= val2)
+            br
+            br
+            button#submit_coder(type="submit") Submit
+

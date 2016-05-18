@@ -1,0 +1,15 @@
+html
+    head
+        title= title
+    body
+        form#form_add_coder(name="add_coder_favLang",method="post",action="/display_coder")
+            span Language you like to Program In
+            span &nbsp;
+            input#input_favLangs(type="text",placeholder="eg. Java",name="coder_favLang",value=val)
+            br
+            br
+            button#submit_coder(type="submit") Next
+
+        form(action="/add_coder_days",method="post")
+            button(type="submit") Back
+

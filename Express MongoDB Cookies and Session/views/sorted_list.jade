@@ -1,0 +1,12 @@
+html
+	head
+		title= title
+	body
+		h3 Welcome Back
+		br
+		h5 These are your preferances :
+		br
+		ul
+			each cod, i in matched
+				li
+					Mr <strong>#{cod.first_name} #{cod.last_name}</strong> knows <strong>#{cod.languages}</strong> and is available on <strong>#{cod.days}</strong> and his favourite language is <strong>#{cod.favLang}</strong>

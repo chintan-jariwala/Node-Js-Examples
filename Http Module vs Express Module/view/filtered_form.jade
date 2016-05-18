@@ -1,0 +1,11 @@
+html
+    head
+        title
+            | Display in loop
+    body(bgcolor=backcolor)
+        p
+            h2
+                |Coders are Following
+
+        -for(var i=0;i<values.name.length;++i)
+            p= values.name[i] +' '+ values.lname[i] + ' ; ' + values.langs[i] + ' ; ' + values.days[i] +' ; ' + values.fav_langs[i]
